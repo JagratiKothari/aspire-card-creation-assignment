@@ -95,6 +95,14 @@ yarn test
 ## 📄 License
 This project is for assignment/demo purposes only.
 
+## 🚀 Deployment
+
+The latest version of this app is deployed and accessible at:
+
+[https://jagratikothari.github.io/aspire-card-creation-assignment/cards](https://jagratikothari.github.io/aspire-card-creation-assignment/cards)
+
+You can always access the live app at the above URL.
+
 ---
 
 **Enjoy managing your Aspire cards!**

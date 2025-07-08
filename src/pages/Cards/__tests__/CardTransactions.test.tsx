@@ -1,6 +1,7 @@
+import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import * as api from '../../api/mockTransactionApiService';
+import * as api from '../../../api/mockTransactionApiService';
 import { Transactions } from '../CardTransactions';
 
 const mockTransactions = [
@@ -11,11 +12,11 @@ const mockTransactions = [
     amount: 100,
     currency: 'S$',
     title: 'Test',
-    type: 'credit',
+    type: 'credit' as const,
     date: '2023-01-01',
     description: 'Refund on debit card',
-    category: 'refund',
-    direction: 'in',
+    category: 'refund' as const,
+    direction: 'in' as const,
   },
 ];
 
