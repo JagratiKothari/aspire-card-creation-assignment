@@ -10,10 +10,10 @@ import 'slick-carousel/slick/slick-theme.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/aspire-card-creation-assignment">
       <Routes>
-        <Route path="/aspire-card-creation-assignment" element={<Layout />}>
-          {/* Default route: redirect /aspire-code-challenge → /aspire-code-challenge/cards */}
+        <Route path="/" element={<Layout />}>
+          {/* Default route: redirect / → /cards */}
           <Route index element={<Navigate to="cards" replace />} />
           
           <Route path="home" element={<Home />} />
@@ -23,8 +23,8 @@ function App() {
           <Route path="settings" element={<Settings />} />
         </Route>
 
-        {/* Catch-all fallback route outside main scope (optional) */}
-        <Route path="*" element={<Navigate to="/aspire-card-creation-assignment" replace />} />
+        {/* Catch-all fallback route */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
